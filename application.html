@@ -1,0 +1,176 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Rules - HKYTG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #2A2E5A;
+        }
+
+        .top-utility-bar {
+            background-color: #1b1e3a;
+            color: #b0b0cc;
+            font-size: 0.85rem;
+            padding: 6px 5%;
+        }
+
+        .utility-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .main-navbar {
+            background-color: #2A2E5A;
+            color: white;
+            padding: 0 5%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #4b4fa3;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .logo-img {
+            height: 56px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+            .nav-links a {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+            }
+
+                .nav-links a.active {
+                    background-color: #403593;
+                }
+
+                .nav-links a:hover {
+                    background-color: #312873;
+                }
+
+        .content-box {
+            max-width: 1000px;
+            margin: 50px auto;
+            padding: 0 30px;
+        }
+
+        h2 {
+            font-size: 2.2rem;
+            color: #2A2E5A;
+            margin-bottom: 25px;
+            border-bottom: 2px solid #D2DBEF;
+            padding-bottom: 8px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin-left: 25px;
+            margin-bottom: 45px;
+        }
+
+        li {
+            font-size: 1.2rem;
+            line-height: 1.7;
+            margin-bottom: 14px;
+            color: #222;
+        }
+
+        /* HIGHLIGHT TEXT STYLING BLOCK USING PALETTE MAGENTA VALUE */
+        .highlight-text {
+            color: #EE5BB3; /* Match code highlight color perfectly */
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .main-navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-utility-bar">
+        <div class="utility-container">
+            <span>✉ hkyouthtalentgala@gmail.com</span>
+        </div>
+    </div>
+
+    <header class="main-navbar">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span>Hong Kong Youth Talent Gala 香港青年才藝盛典</span>
+        </div>
+        <nav class="nav-links">
+            <a href="HKYTG-home.html">Home/主頁</a>
+            <a href="event-details.html">Event Details/活動詳情</a>
+            <a href="application.html" class="active">Application/報名程序</a>
+        </nav>
+    </header>
+
+    <main class="content-box">
+
+        <h2>General Rules:</h2>
+        <ul>
+            <li>Application is open to all Secondary 1 to Secondary 6 students across Hong Kong.</li>
+            <li>Participants are required to shoot a <span class="highlight-text">video</span> (in MP4, MOV, WMV, AVI format etc.) <span class="highlight-text">under 2 minutes</span> to showcase their artistic talent. Selected participants will receive a confirmation email on 23/6.</li>
+            <li>The submission period is from 22 May 2026 to <span class="highlight-text">19 June 2026</span>. Any late submission will not be accepted.</li>
+            <li>Participants may apply either as individuals or as a group. Group submissions are limited to a <span class="highlight-text">maximum of 5 members</span>. Each group submission should only be submitted <span class="highlight-text">once</span>.</li>
+            <li>Participants should upload their video submission onto Google Drive and submit the respective link through the Google Form below. Please change the settings of "General access" to <span class="highlight-text">"Anyone with the link"</span>.</li>
+            <li>All individual, group, band and ensemble performances must be a <span class="highlight-text">full-body shot</span>.</li>
+            <li>All participants must be in <span class="highlight-text">proper attire</span>. Revealing garments, attire featuring offensive graphics or language should be avoided.</li>
+            <li>The use of music, lyrics or spoken word containing references to controlled substances, depictions of violence or suggestive sexual themes is <span class="highlight-text">strictly prohibited</span>.</li>
+        </ul>
+
+        <h2>規則：</h2>
+        <ul>
+            <li>本活動開放予全港中一至中六學生參加。</li>
+            <li>參加者須拍攝一段片長<span class="highlight-text">兩分鐘或以下</span>的<span class="highlight-text">視頻</span>（格式應為MP4、MOV、WMV、AVI等）以展示藝術才能。獲選者將於2026年6月23日獲電郵通知。</li>
+            <li>提交期限為2026年5月22日至<span class="highlight-text">2026年6月19日</span>。逾期遞交將不獲受理。</li>
+            <li>參加者可以個人或小組形式參與活動。小組形式每組<span class="highlight-text">上限為5人</span>。每個小組只需遞交視頻<span class="highlight-text">一次</span>。</li>
+            <li>參加者須將視頻上載至Google Drive，並透過以下的Google表格提交相關連結。請將「一般存取權」的設定更改為<span class="highlight-text">「任何知道連結的使用者」</span>。</li>
+            <li>所有個人、小組、樂隊及合奏表演必須採用<span class="highlight-text">全身拍攝</span>。</li>
+            <li>所有參加者須<span class="highlight-text">穿著得體</span>，不得穿著暴露或帶有冒犯性圖像、語言之服裝。</li>
+            <li><span class="highlight-text">嚴禁使用</span>提及受管制藥物、描繪暴力，或帶有暗示性色情主題的音樂、歌詞或口語。</li>
+        </ul>
+
+    </main>
+
+</body>
+</html>

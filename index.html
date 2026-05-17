@@ -1,0 +1,303 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hong Kong Youth Talent Gala 香港青年才藝盛典</title>
+
+    <style>
+        /* GLOBAL BRAND DESIGN SETTINGS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #2A2E5A; /* Deep Blue-Indigo */
+        }
+
+        /* 1. TOP UTILITY STRIP */
+        .top-utility-bar {
+            background-color: #1b1e3a; /* Extra dark matching tint */
+            color: #b0b0cc;
+            font-size: 0.85rem;
+            padding: 6px 5%;
+        }
+
+        .utility-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            align-items: center;
+        }
+
+        /* 2. NAVIGATION HEADER BAR */
+        .main-navbar {
+            background-color: #2A2E5A; /* Exact color block match from palette */
+            color: white;
+            padding: 0 5%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #4b4fa3;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .logo-img {
+            height: 56px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+            .nav-links a {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+                transition: background 0.2s ease;
+            }
+
+                .nav-links a.active {
+                    background-color: #403593; /* Palette Indigo for Active Page */
+                }
+
+                .nav-links a:hover {
+                    background-color: #312873;
+                }
+
+        /* 3. HERO THEATER CURTAIN BANNER */
+        .curtain-hero {
+            background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://images.unsplash.com/photo-1507676184212-d03ab07a01bf?q=80&w=1200') no-repeat center center;
+            background-size: cover;
+            padding: 80px 20px;
+            text-align: center;
+        }
+
+        .hero-content {
+            max-width: 1100px;
+            margin: 0 auto;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.85);
+        }
+
+            .hero-content h1 {
+                font-size: 2.4rem;
+                margin-bottom: 12px;
+            }
+
+            .hero-content h2 {
+                font-size: 2.1rem;
+                font-weight: normal;
+                margin-bottom: 35px;
+            }
+
+        .apply-text {
+            font-size: 1.5rem;
+        }
+
+        /* 4. MAIN LAYOUT GRID BODY CONTAINER */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        /* Intro Block side-by-side alignment */
+        .intro-section {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 60px;
+        }
+
+        .intro-image {
+            flex: 1;
+            text-align: center;
+        }
+
+            .intro-image img {
+                max-width: 320px;
+                width: 100%;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            }
+
+        .intro-text {
+            flex: 1.5;
+        }
+
+            .intro-text h3 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+                color: #2A2E5A;
+            }
+
+            .intro-text p {
+                font-size: 1.15rem;
+                line-height: 1.6;
+                margin-bottom: 20px;
+            }
+
+        /* 5. BRAND GRADIENT HIGHLIGHT BOX */
+        .highlights-banner {
+            /* Smooth gradient transition using your palette blues and purples */
+            background: linear-gradient(to right, #4b4fa3, #403593);
+            color: white;
+            text-align: center;
+            padding: 40px 30px;
+            margin-bottom: 60px;
+            border-radius: 8px;
+            width: 100%;
+        }
+
+            .highlights-banner h3 {
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+
+            .highlights-banner p {
+                font-size: 1.15rem;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+                .highlights-banner p:last-child {
+                    margin-bottom: 0;
+                }
+
+        /* Lower Lists & Text elements structure */
+        .details-section {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+            .details-section h3 {
+                font-size: 2rem;
+                color: #2A2E5A;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+
+            .details-section ul {
+                list-style-type: disc;
+                margin-left: 25px;
+                font-size: 1.15rem;
+                line-height: 1.8;
+                margin-bottom: 50px;
+            }
+
+        .team-text {
+            text-align: center;
+            font-size: 1.15rem;
+            line-height: 1.7;
+        }
+
+        /* Mobile Responsive Fallbacks */
+        @media (max-width: 768px) {
+            .intro-section {
+                flex-direction: column;
+            }
+
+            .main-navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 15px;
+            }
+
+            .nav-links {
+                height: 45px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-utility-bar">
+        <div class="utility-container">
+            <span>✉ hkyouthtalentgala@gmail.com</span>
+        </div>
+    </div>
+
+    <header class="main-navbar">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span>Hong Kong Youth Talent Gala 香港青年才藝盛典</span>
+        </div>
+        <nav class="nav-links">
+            <a href="HKYTG-home.html" class="active">Home/主頁</a>
+            <a href="event-details.html">Event Details/活動詳情</a>
+            <a href="application.html">Application/報名程序</a>
+        </nav>
+    </header>
+
+    <section class="curtain-hero">
+        <div class="hero-content">
+            <h1>SHOWCASING YOUNG ARTISTIC TALENT COME JOIN HKYTG 2026!</h1>
+            <h2>展示青年藝術才能 加入香港青年才藝盛典！</h2>
+            <p class="apply-text">Apply through here / 請於此提交申請：</p>
+        </div>
+    </section>
+
+    <main class="container">
+
+        <section class="intro-section">
+            <div class="intro-image">
+                <img src="poster.jpg" alt="HKYTG 2026 Poster">
+            </div>
+            <div class="intro-text">
+                <h3>What is HKYTG? 甚麼是香港青年才藝盛典？</h3>
+                <p><strong>Hong Kong Youth Talent Gala (YTG)</strong> is an inter-school talent show that aims to promote youth arts culture, celebrate diverse talents, and fully unleash the creativity of the secondary school community.</p>
+                <p>香港青年才藝盛典是一項聯校才藝匯演，旨在推廣青年藝術文化、彰顯多元才能、並充分釋放中學群體的創造力。</p>
+            </div>
+        </section>
+
+        <section class="highlights-banner">
+            <h3>Programme Highlights 活動概要</h3>
+            <p>Following the online auditions, selected performers will attend systematic rehearsals guided by industry professionals. In late August, YTG proudly presents The Grand Show - A non-stop musical medley featuring musical theatre, pop hits, original choreography and other special talents.</p>
+            <p>線上選拔後，獲選的參加者將在業界專業人士的指導下接受系統性訓練。YTG將於八月底隆重呈獻大匯演——一場一氣呵成、不間斷的串燒表演，融合音樂劇、流行曲、原創編舞及各類特殊才藝技能。</p>
+        </section>
+
+        <section class="details-section">
+            <h3>Why Join HKYTG? 為什麼加入香港青年才藝盛典？</h3>
+            <ul>
+                <li><strong>Develop leadership and organisation skills</strong> 培養領導能力</li>
+                <li><strong>Nurture creative vision</strong> 培育創意思維</li>
+                <li><strong>Polish on-stage performance skills</strong> 精進表演技巧</li>
+                <li><strong>Connect with like-minded peers</strong> 結識藝術同伴</li>
+                <li><strong>Enrich personal portfolio</strong> 豐富個人履歷</li>
+            </ul>
+
+            <h3>Meet Our Team 籌辦委員會</h3>
+            <div class="team-text">
+                <p>The YTG founding team is a student-led organisation. All members are elite students with extensive experience in stage performance, and a profound passion for promoting artistic culture across the secondary school community and beyond.</p>
+                <br>
+                <p>YTG籌辦委員會由學生主導，全部成員均為擁有豐富舞台表演經驗，並對在中學社群及更廣泛層面推廣藝術文化充滿熱忱的精英學生。</p>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>

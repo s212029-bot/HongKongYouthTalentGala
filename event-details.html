@@ -1,0 +1,180 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Details - HKYTG</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif, sans-serif;
+        }
+
+        body {
+            background-color: #fcfcfc;
+            color: #2A2E5A;
+        }
+
+        .top-utility-bar {
+            background-color: #1b1e3a;
+            color: #b0b0cc;
+            font-size: 0.85rem;
+            padding: 6px 5%;
+        }
+
+        .utility-container {
+            display: flex;
+            justify-content: flex-end;
+            gap: 15px;
+            align-items: center;
+        }
+
+        .main-navbar {
+            background-color: #2A2E5A;
+            color: white;
+            padding: 0 5%;
+            height: 70px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #4b4fa3;
+        }
+
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        .logo-img {
+            height: 56px;
+            width: 100px;
+            object-fit: cover;
+            border-radius: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            height: 100%;
+            align-items: center;
+        }
+
+            .nav-links a {
+                color: #ffffff;
+                text-decoration: none;
+                padding: 0 20px;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                font-size: 1.1rem;
+            }
+
+                .nav-links a.active {
+                    background-color: #403593;
+                }
+
+                .nav-links a:hover {
+                    background-color: #312873;
+                }
+
+        .container {
+            max-width: 1200px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        /* SIDE BY SIDE GRID CONTAINER CONFIGURATION */
+        .split-grid {
+            display: flex;
+            gap: 40px;
+        }
+
+        .column {
+            flex: 1;
+            background-color: #D2DBEF; /* Exact Light Blue-Purple palette card background */
+            padding: 30px;
+            border-radius: 6px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+            .column img {
+                width: 100%;
+                height: auto;
+                border-radius: 4px;
+                margin-bottom: 25px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+
+            .column h3 {
+                font-size: 2rem;
+                text-align: center;
+                color: #2A2E5A;
+                margin-bottom: 20px;
+            }
+
+            .column p {
+                font-size: 1.15rem;
+                line-height: 1.6;
+                margin-bottom: 15px;
+            }
+
+        @media (max-width: 768px) {
+            .split-grid {
+                flex-direction: column;
+            }
+
+            .main-navbar {
+                flex-direction: column;
+                height: auto;
+                padding: 15px;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="top-utility-bar">
+        <div class="utility-container">
+            <span>✉ hkyouthtalentgala@gmail.com</span>
+        </div>
+    </div>
+
+    <header class="main-navbar">
+        <div class="logo-area">
+            <img src="logo.png" alt="Logo" class="logo-img">
+            <span>Hong Kong Youth Talent Gala 香港青年才藝盛典</span>
+        </div>
+        <nav class="nav-links">
+            <a href="HKYTG-home.html">Home/主頁</a>
+            <a href="event-details.html" class="active">Event Details/活動詳情</a>
+            <a href="application.html">Application/報名程序</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <div class="split-grid">
+
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=600" alt="Singer performing on stage">
+                <h3>Mission 任務</h3>
+                <p><strong>To discover and nurture diverse artistic talents young performers by providing a shining stage for them to showcase their unique style and creativity.</strong> Through deep engagement in the creative process, we cultivate their leadership and creative thinking. We are also committed to building an open, inclusive inter-school performance platform rooted in the secondary school community.</p>
+                <p>提供舞台讓年輕表演者展現其獨特的風格與創意，從而發掘並培育多元化的藝術人才。藉由學生深度參與創作過程，培養領導才能及創意思維。本團隊亦致力建立一個以中學社群為基礎、開放且包容的跨校表演平台。</p>
+            </div>
+
+            <div class="column">
+                <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?q=80&w=600" alt="Confetti falling over stage audience">
+                <h3>Vision 願景</h3>
+                <p><strong>To build a lasting, influential student-led youth arts platform across Hong Kong, cultivating young artistic talents from an early age and enriching the local youth cultural atmosphere.</strong> We aspire to establish Hong Kong's premier student-led stage, empowering the next generation to redefine the cultural landscape and drive the city's creative economy through sustainable youth art development.</p>
+                <p>於香港建立一個可持續、具影響力且由學生主導的青年藝術平台，從小培育優秀青年藝術人才，豐富在地青年文化氛圍。本團隊期望打造香港首屈一指的學生主導舞台，賦能下一代代表演者，透過可持續的青年藝術發展，重新定義文化景觀並推動城市創意經濟。</p>
+            </div>
+
+        </div>
+    </main>
+
+</body>
+</html>
